@@ -1,0 +1,13 @@
+.git
+
+.history
+.idea
+
+gradle
+.gradle
+**/build/
+!src/**/build/
+!gradle-wrapper.jar
+.gradletasknamecache
+
+.DS_Store

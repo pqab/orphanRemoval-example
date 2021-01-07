@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.hibernate.reactive', name: 'hibernate-reactive-core', version: '1.0.0.Alpha11'
+    implementation group: 'io.vertx', name: 'vertx-core', version: '3.9.4'
+    implementation group: 'io.vertx', name: 'vertx-mysql-client', version: '3.9.4'
+    implementation group: 'org.slf4j', name: 'slf4j-jdk14', version: '2.0.0-alpha1'
+
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    testCompileOnly 'org.projectlombok:lombok:1.18.16'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+}
